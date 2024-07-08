@@ -1,0 +1,17 @@
+type Alpaca {
+  id: ID!
+  name: String!
+}
+
+input NewAlpaca {
+  name: String!
+  faceSquishRating: Int!
+}
+
+type Query {
+  alpacas: [Alpaca!]!
+}
+
+type Mutation {
+  createAlpaca(input: NewAlpaca!): Alpaca!
+}

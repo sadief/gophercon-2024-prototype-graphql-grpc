@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package squish_analytics.v1;
+
+message CreateSquishRatingRequest {
+  string alpaca_id = 1;
+  string squish_rating = 2;
+}
+
+message CreateSquishRatingResponse {
+  string squish_rating_id = 1;
+}
+
+service SquishAnalyticsService {
+  rpc CreateSquishRating(CreateSquishRatingRequest) returns (CreateSquishRatingResponse) {}
+}
