@@ -7,4 +7,3 @@
 5. Update schema.resolvers.go
 6. Regenerate the GQL files `go run github.com/99designs/gqlgen generate`
 7. Run Alpaca server `go run main.go`
-8. Make CURL request with new Alpaca name `curl -X POST http://localhost:8080/alpaca/ -H "Content-Type: application/json" -d '{"Name": "Fernando"}'`
